@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenges | Free-Lance</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/create-task.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body id="main">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Profile</a>
+        <a href="allTask.html">All Challenges</a>
+        <a href="createTask.html">Create Challenge</a>
+        <a href="#">My Challenges</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Free->Lance</span>
+<div class="container">
+    <div class="search"></div>
+    <div class="display">
+        <div class="row challenge">
+        </div>
+    </div>
+
+    </div>
+
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
+    <script src="../js/allTask.js" type="text/javascript"></script>
+
+</body>
+<script src="js/menu.js"></script>
+<script>
+
+function something(id){
+    console.log(id);
+}
+function acceptTask(id, user, start, end) {
+    console.log(id);
+    
+    $.post("/api/task/usertask/"+id, function(data) {
+      console.log("Accept Task", data);
+      
+    });
+  };
+
+</script>
+
+
+</html>

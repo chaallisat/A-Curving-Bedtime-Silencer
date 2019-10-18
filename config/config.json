@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "process.env.username",
-    "password": "process.env.password",
-    "database": "database_development",
+    "username": "root",
+    "password": "password",
+    "database": "freelance",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
@@ -16,11 +16,12 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
+    "username": "t931crwllnrx3esl",
+    "password": "n2379ounlj0j4jbq",
+    "database": "mtgltt7kduoj84jo",
     "host": "127.0.0.1",
     "dialect": "mysql",
+    "use_env_variable": "JAWSDB_URL",
     "operatorsAliases": false
   }
 }
