@@ -1,4 +1,5 @@
 const mysql = require("mysql");
+const exphbs = require("express-handlebars");
 const express = require("express");
 const path = require("path");
 const passport = require("passport");
@@ -54,7 +55,13 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
+app.use(express.static("public"));
+
+// Set Handlebars.
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
