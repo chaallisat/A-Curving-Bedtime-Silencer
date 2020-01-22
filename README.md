@@ -4,29 +4,26 @@ Free-Lance is a new take on task services.
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-
-git clone https://github.com/chaallisat/free-lance.git
-cd free-lance
+    git clone https://github.com/chaallisat/free-lance.git
+    cd free-lance
 
 ### Prerequisites
 You will need to have MYSQL and Node.js preinstalled on your computer.
 To make this project work, you will need to install the following npms or just use: 
 
+    npm install
 
-npm install
-
-
-body-parser
-connect-ensure-login
-dotenv
-express
-express-session
-morgan
-mysql
-mysql2
-passport
-passport-local
-sequelize
+    body-parser
+    connect-ensure-login
+    dotenv
+    express
+    express-session
+    morgan
+    mysql
+    mysql2
+    passport
+    passport-local
+    sequelize
 
 
 <!-- Give examples
