@@ -35,9 +35,11 @@ module.exports = function(app) {
         if (response) {
           req.session.loggedin = true;
           req.session.username = username;
+          document.cookie = `username=${req.session.username}; path=/`;
           // THIS IS WHERE THE CHANGE HAPPENED!
           res.redirect("/index.html?username="+username);
       } else {
+          res.redirect("/login.html");
           res.send('Incorrect Username and/or Password!');
       }
       res.end();
@@ -53,10 +55,7 @@ module.exports = function(app) {
     res.redirect("/login.html");
   });
 
-  app.get(
-    "/profile",
-    require("connect-ensure-login").ensureLoggedIn(),
-    function(req, res) {
+  app.get("/profile", require("connect-ensure-login").ensureLoggedIn(), function(req, res) {
       res.render('/index.html', { username: req.user.username });
     }
   );

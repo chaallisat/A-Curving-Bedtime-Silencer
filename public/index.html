@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../public/css/create-task.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../public/css/create-task.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <title>Free-Lance-></title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
+
 </head>
 <body id="main">
+
+    <!-- </nav> -->
+
+<ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+          <div id="season-color" class="background darken-1">
+              <img id="bk-img" src="">
+            </div>
+            <a href="index.html"><img class="circle" src="https://cdn.pixabay.com/photo/2014/04/02/11/13/girl-305590_960_720.png"></a>
+            <a href="index.html">Profile</a>
+            <a href="allTask.html">All Challenges</a>
+            <a href="createTask.html">Create Challenge</a>
+            <a href="#">My Challenges</a>
+      </div>
+    </li>
+    <li><a href="assets/other/Resume.pdf"><i class="material-icons">description</i>Resume</a></li>
+    <li><a href="https://www.linkedin.com/in/chaa-llisa-taylor-50bba5183/"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+    <li><a href="https://github.com/chaallisat"><i class="fa fa-github"></i>Git Hub</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <!-- <li><a class="subheader">Subheader</a></li> -->
+    <li><a class="waves-effect" href="contact.html">Contact</a></li>
+    <!-- <li><a class="waves-effect" href="portfolio.html">Projects</a></li> -->
+  </ul>
+  <div class="test">
+  <a href="#" id="season-color1" data-target="slide-out" class="sidenav-trigger btn-floating pulse"><i class="material-icons">menu</i></a>
+  </div>
+
    
         <div class="jumbotron">
                 <h1 class="display-4 font-weight-bold">Free-Lance-></h1>
@@ -17,7 +63,7 @@
                 <p id="username" value="jogeskolla">username</p>
                 <img id="home" src="../public/baseline_home_black_18dp.png" alt="Home" width="20" height="20">
                 
-                <div class="d-flex flex-row"> 
+                <div class="d-flex flex-row"> <!-- Menu starts here -->
                     <div class="p-2">
                         <div id="mySidenav" class="sidenav">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -28,7 +74,7 @@
                         </div>
                         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu-></span>
                     </div>
-                </div> 
+                </div> <!-- Menu ends here -->
             </div>
     
     <div class="container">
@@ -44,8 +90,10 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="materialize/js/materialize.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 <script src="js/menu.js"></script>
+<script src="assets/js/matapp.js"></script>
 <script>
     let searchParams = new URLSearchParams(window.location.search)
     let param = searchParams.get('username');
