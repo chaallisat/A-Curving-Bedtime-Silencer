@@ -63,10 +63,10 @@ app.use(express.static("public"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
-require("./routes/login-routes.js")(app);
-require("./routes/task-routes.js")(app);
+require("./routes/html-routes.js");
+require("./routes/api-routes.js");
+require("./routes/login-routes.js");
+require("./routes/task-routes.js");
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
