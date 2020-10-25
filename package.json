@@ -1,35 +1,15 @@
 {
-  "name": "a-curving-bedtime-silencer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "free-lance",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/reb2039607/A-Curving-Bedtime-Silencer.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/reb2039607/A-Curving-Bedtime-Silencer/issues"
-  },
-  "homepage": "https://github.com/reb2039607/A-Curving-Bedtime-Silencer#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "connect-ensure-login": "^0.1.1",
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "express-session": "^1.16.2",
-    "handlebars": "^4.7.0",
-    "morgan": "^1.9.1",
-    "mysql": "^2.17.1",
-    "mysql2": "^1.6.5",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
-    "sequelize": "^5.16.0"
+    "next": "9.5.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
